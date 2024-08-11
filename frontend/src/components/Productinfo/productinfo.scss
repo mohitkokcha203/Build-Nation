@@ -1,0 +1,116 @@
+.Pinfo {
+  display: flex;
+  gap: 180px;
+  margin-top: 80px;
+  justify-content: center;
+  padding-inline: 6%;
+  z-index: 5;
+  .Pimg {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 8px #000;
+    transform: scale(0.96);
+    transition: 0.2s ease-in-out;
+  }
+  .Pimg:hover {
+    transform: scale(1);
+  }
+  .Pdetail {
+    display: flex;
+    flex-direction: column;
+    .Pname {
+      margin-block: 10px;
+    }
+
+    .Nprice {
+      font-weight: 500;
+      margin: 7px;
+      font-size: 1.25rem;
+      .Rupees {
+        font-weight: bold;
+      }
+      .Oprice {
+        padding: 10px;
+        font-weight: 400;
+        font-size: 0.9rem;
+        text-decoration-line: line-through;
+      }
+    }
+    p {
+      margin: 7px;
+      font-size: small;
+      margin-bottom: 25px;
+      text-align: justify;
+      b {
+        font-weight: 700;
+        font-size: normal;
+      }
+    }
+    .about {
+      font-size: 0.9rem;
+      line-height: 1.25rem;
+      text-align: justify;
+    }
+
+    .cart-options {
+      margin-top: 50px;
+      margin-left: 200px;
+      .quantity-selector {
+        border: 1px solid var(--secondary-text-color);
+        width: fit-content;
+        .btn {
+          border-radius: 42px;
+          padding: 8px 16px;
+          background-color: #9800df;
+          color: #fff;
+          display: inline-block;
+          cursor: pointer;
+          font-size: 1.2rem;
+          user-select: none;
+          &:hover {
+            background-color: #7001a3;
+          }
+          &:active {
+            background-color: #500075;
+          }
+        }
+
+        .quantity {
+          text-align: center;
+          width: 60px;
+          display: inline-block;
+          font-weight: 700;
+          background-color: rgb(228, 241, 245);
+          padding: 8px 4px;
+          border-radius: 10px;
+        }
+      }
+
+      .add-to-cart {
+        color: #fff;
+        cursor: pointer;
+        font-size: 1.2rem;
+        user-select: none;
+        margin-top: 30px;
+        margin-left: 8px;
+        padding: 10px 20px;
+        background-color: #007759;
+        border: none;
+        border-radius: 6px;
+        transition: 0.2s ease-in;
+        &:hover {
+          background-color: #00523d;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1240px) {
+  .Pinfo {
+    padding-inline: 3%;
+    gap: 80px;
+    .about {
+      width: 80%;
+    }
+  }
+}

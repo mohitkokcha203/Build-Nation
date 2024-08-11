@@ -1,0 +1,119 @@
+.sProduct {
+  margin-block: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  .pimage {
+    width: 320px;
+    height: 320px;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      box-shadow: 2px 2px 5px #2c2c2c;
+    }
+    border-radius: 8px;
+  }
+
+  .pdata {
+    .oldPrice {
+      padding: 5px 0 10px 0;
+      text-decoration-line: line-through;
+      text-decoration-style: double;
+    }
+    .category {
+      padding-bottom: 15px;
+    }
+    .detailP {
+      text-align: justify;
+      width: 700px;
+    }
+  }
+  .pdata h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+  }
+  .pdata h4 {
+    font-size: 1.1rem;
+  }
+}
+.btns {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  .btn {
+    height: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 550;
+    color: #fff;
+    width: 100px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  .cancelBtn {
+    background-color: #07db00;
+    box-shadow: 0 0 2px #4d4d4d;
+
+    &:hover {
+      background: #07bb01;
+    }
+  }
+  .deleteBtn {
+    background-color: red;
+    box-shadow: 0px 0px 2px rgb(66, 66, 66);
+    &:hover {
+      background: rgb(202, 0, 0);
+    }
+  }
+}
+
+@media screen and (max-width: 1540px) {
+  .sProduct {
+    width: 80%;
+    margin-inline: 20px;
+    justify-content: flex-start;
+    gap: 80px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .sProduct {
+    margin-inline: 10px;
+    gap: 50px;
+    .pdata {
+      .detailP {
+        width: 600px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sProduct {
+    margin-top: 80px;
+    margin-inline: 0px;
+    gap: 25px;
+    .pimage {
+      width: 250px;
+      height: 250px;
+    }
+    .pdata {
+      .detailP {
+        width: 550px;
+      }
+    }
+  }
+  .btns {
+    margin-top: 60px;
+    justify-content: flex-start;
+    gap: 80px;
+  }
+}

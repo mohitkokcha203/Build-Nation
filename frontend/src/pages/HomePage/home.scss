@@ -1,0 +1,19 @@
+.homeBoxx {
+  .Hproduct {
+    .topText {
+      margin-top: 15px;
+      text-align: center;
+      text-decoration: underline;
+      text-underline-offset: 5px;
+      letter-spacing: 0.12cm;
+    }
+
+    .allProducts {
+      margin-top: 5px;
+      gap: 10px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}

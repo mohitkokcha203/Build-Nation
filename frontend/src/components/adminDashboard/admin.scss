@@ -1,0 +1,103 @@
+.admin {
+  background-color: white;
+  overflow: hidden;
+
+  .dashboard {
+    position: fixed;
+    z-index: 888;
+    width: 100%;
+    height: 80px;
+    background-color: purple;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: 1px 1px 2px #fff;
+    padding-inline: 30px;
+
+    .logo {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      border: 0.5px solid #fa00ed;
+      background-image: url(../../assets/logonew.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .logoname {
+      padding-left: 25px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      .Wname {
+        color: rgb(255, 0, 0);
+      }
+    }
+    .logoutBtn {
+      font-size: 2.5rem;
+      cursor: pointer;
+      transition: 0.2s ease-in;
+      &:hover {
+        color: rgb(241, 36, 36);
+      }
+    }
+  }
+  .adminBox {
+    position: relative;
+    top: 80px;
+    display: flex;
+    margin-bottom: 80px;
+    .sidebar {
+      width: 250px;
+      height: 900px;
+      background-color: #ebebeb;
+      box-shadow: 2px 2px 8px #4e4e4e;
+      transition: 0.2s ease;
+    }
+    .sidebar:hover {
+      background-color: #eeeeee;
+    }
+    .ulList {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      padding-top: 60px;
+    }
+    .links {
+      font-size: 1.25rem;
+      list-style: none;
+      color: #000;
+      font-weight: 500;
+      text-align: center;
+      padding: 5px;
+      transition: 0.2s ease-in;
+    }
+    .links:hover {
+      transform: rotateX(25deg);
+      border: 0.2px solid #00b9b9;
+      color: #0000ff;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .admin {
+    .dashboard {
+      padding-inline: 15px;
+    }
+    .adminBox {
+      .sidebar {
+        width: 220px;
+      }
+      .ulList {
+        padding-top: 30px;
+      }
+
+      .links {
+        font-size: 1rem;
+        padding: 3px;
+      }
+    }
+  }
+}

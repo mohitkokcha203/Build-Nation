@@ -1,0 +1,102 @@
+.container {
+  .product {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-block: 20px;
+    text-align: center;
+    .imageBox {
+      height: 80px;
+      width: 80px;
+      align-self: center;
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+      }
+      border-radius: 5px;
+      box-shadow: 0px 0px 4px rgb(63, 63, 63);
+    }
+
+    .details {
+      width: 85%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .btn {
+        height: 35px;
+        text-align: center;
+        font-weight: 600;
+        color: #fff;
+        width: 80px !important;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+      }
+      .updateBtn {
+        background-color: #2294ed;
+        box-shadow: 0 0 2px #577592;
+
+        &:hover {
+          background: #1d69a3;
+        }
+      }
+      .deleteBtn {
+        background-color: red;
+        box-shadow: 0px 0px 2px rgb(212, 0, 0);
+        &:hover {
+          background: rgb(202, 0, 0);
+        }
+      }
+    }
+    .details h3,
+    p,
+    button {
+      align-self: center;
+      width: 160px;
+    }
+
+    box-shadow: 10px 5px 10px #c9c9c9;
+    border-bottom: 1px solid #00000059;
+    transition: 0.2s ease-in-out;
+  }
+  .product:hover {
+    background-color: #dfdfdf;
+    border: none;
+    transform: scale(1.01);
+  }
+}
+@media screen and (max-width: 1540px) {
+  .container {
+    .product {
+      width: 70%;
+      padding-block: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .container {
+    .product {
+      width: 68%;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    .product {
+      width: 58%;
+
+      .details h3,
+      p,
+      button {
+        width: 110px;
+      }
+    }
+  }
+}

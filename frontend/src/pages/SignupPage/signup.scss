@@ -1,0 +1,60 @@
+.parentbox {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../assets/newmain.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  .parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .main {
+      width: 360px;
+      height: 480px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 5px 20px 50px #ffffff;
+      background-color: #5c5c5c2d;
+
+      #chk {
+        display: none;
+      }
+
+      .signup {
+        #head {
+          color: #eaeaea;
+          font-size: 2.3em;
+          justify-content: center;
+          display: flex;
+          margin: 45px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+        .input {
+          width: 70%;
+          height: 20px;
+          background: #ececec;
+          justify-content: center;
+          display: flex;
+          margin: 20px auto;
+          padding: 20px;
+          border: none;
+          outline: none;
+          border-radius: 5px;
+        }
+        .Sbutton {
+          background: #573b8a !important;
+        }
+        .Sbutton:hover {
+          border-color: #2294ed !important;
+          background-color: #2294ed !important;
+        }
+        #new {
+          margin: 40px;
+          color: white;
+        }
+      }
+    }
+  }
+}

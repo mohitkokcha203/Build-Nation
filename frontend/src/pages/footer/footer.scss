@@ -1,0 +1,43 @@
+.footer {
+  width: 100%;
+  margin-top: 40px;
+  background-color: rgb(113, 225, 85);
+  overflow: hidden;
+  .info {
+    height: 140px;
+    padding-block: 4px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    .infohead {
+      h5 {
+        margin: 4px;
+        font-size: 1rem;
+      }
+      p {
+        margin: 5px;
+        padding-left: 4px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        &:hover {
+          color: rgb(0, 121, 177);
+        }
+      }
+    }
+    .social p {
+      font-size: 1.1rem;
+    }
+  }
+  .developer {
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 2px #8d8d8d;
+    margin-top: -8px;
+    padding-bottom: 4px;
+    &:hover {
+      text-decoration: underline;
+      color: rgb(182, 182, 182);
+    }
+  }
+}

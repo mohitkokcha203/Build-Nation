@@ -1,0 +1,51 @@
+.parentBoxx {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../assets/newmain.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  .parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .main {
+      width: 360px;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 5px 20px 50px #ffffff;
+      background-color: #5c5c5c2d;
+
+      #chk {
+        display: none;
+      }
+      .login {
+        #head {
+          color: #573b8a;
+          font-size: 2.3em;
+          justify-content: center;
+          display: flex;
+          margin: 50px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+        .inputs {
+          width: 70%;
+          height: 20px;
+          background: #ececec;
+          justify-content: center;
+          display: flex;
+          margin: 20px auto;
+          padding: 20px;
+          border: none;
+          outline: none;
+          border-radius: 5px;
+        }
+        #new {
+          margin: 40px;
+        }
+      }
+    }
+  }
+}

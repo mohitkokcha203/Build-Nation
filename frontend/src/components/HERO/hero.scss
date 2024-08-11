@@ -1,0 +1,57 @@
+.hero {
+  background-image: url(../../assets/heroback.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 78vh;
+
+  .hero-content {
+    padding-top: 40px;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    gap: 10px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+
+    .heading {
+      color: white;
+      font-size: 2.5rem;
+    }
+    .subheading {
+      font-size: 1.2rem;
+      color: whitesmoke;
+    }
+
+    .btnExplore {
+      background: #830ee2;
+      width: 120px;
+      height: 40px;
+      font-size: 0.95rem;
+      color: whitesmoke;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s ease-in;
+      box-shadow: 1px 1px 4px #575757;
+      margin-top: 40px;
+      &:hover {
+        background: #6b06be;
+      }
+    }
+    &:hover {
+      background-color: rgba($color: #000000, $alpha: 0.6);
+    }
+  }
+}
+@media screen and (max-width: 1240px) {
+  .hero {
+    background-image: url(../../assets/heroback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+  }
+}

@@ -1,0 +1,116 @@
+#navbar {
+  position: fixed;
+  top: 0;
+  z-index: 777;
+  width: 100%;
+  height: 80px;
+  background-color: #242424;
+  display: flex;
+  overflow: hidden;
+  padding-inline: 30px;
+  justify-content: space-between;
+  align-items: center;
+  color: whitesmoke;
+  .Nflex {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 35px;
+    margin-top: 10px;
+    .logo {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      border: 0.5px solid #fa00ed;
+      background-image: url("../../assets/logonew.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .logoname {
+      color: #ffffff;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 2px #fff;
+      cursor: pointer;
+      .Wname {
+        color: rgb(255, 0, 0);
+      }
+    }
+    ul {
+      margin-left: 100px;
+      li {
+        transition: 0.2s ease-in-out;
+      }
+      li:hover {
+        transform: translateY(-5px);
+      }
+      .CategoryLink {
+        color: #fff;
+        font-weight: 600;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+      }
+      .CategoryLink:hover {
+        color: #66bbf3;
+      }
+    }
+  }
+  .nav-right {
+    width: 300px;
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .Hambutton {
+      display: none;
+    }
+
+    .cart {
+      position: relative;
+      cursor: pointer;
+      .cart-icon {
+        font-size: 1.6rem;
+      }
+      .item-count {
+        position: absolute;
+        top: -10px;
+        right: -4px;
+        height: 18px;
+        width: 18px;
+        background-color: rgb(201, 0, 201);
+        border-radius: 50%;
+        font-size: 0.6rem;
+      }
+    }
+    .logoutBtn {
+      font-size: 3.5rem;
+      cursor: pointer;
+      transition: 0.2s ease-in;
+      &:hover {
+        color: rgb(241, 36, 36);
+      }
+    }
+  }
+}
+@media screen and (max-width: 1240px) {
+  #navbar {
+    width: 100%;
+    background-color: #66bbf3;
+    ul {
+      margin-left: 60px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #navbar {
+    width: 100%;
+    height: 70px;
+    background-color: #fa00ed;
+    .Nlist {
+      display: none;
+    }
+    .Hambutton {
+      display: block;
+    }
+  }
+}
